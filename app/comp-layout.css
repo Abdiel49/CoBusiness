@@ -1,0 +1,185 @@
+:root {
+  --r-site-header-x: 0.000%; --r-site-header-y: 0.000%; --r-site-header-w: 100.000%; --r-site-header-h: 6.430%;
+  --r-brand-mark-x: 3.230%; --r-brand-mark-y: 1.510%; --r-brand-mark-w: 2.820%; --r-brand-mark-h: 3.970%;
+  --r-brand-name-x: 6.790%; --r-brand-name-y: 1.890%; --r-brand-name-w: 12.580%; --r-brand-name-h: 3.210%;
+  --r-brand-name-cap: 25px; --r-brand-name-font: 36px;
+  --r-brand-description-x: 21.450%; --r-brand-description-y: 2.080%; --r-brand-description-w: 18.160%; --r-brand-description-h: 3.020%;
+  --r-brand-description-cap: 10px; --r-brand-description-font: 16px;
+  --r-header-navigation-x: 55.410%; --r-header-navigation-y: 1.230%; --r-header-navigation-w: 25.080%; --r-header-navigation-h: 4.540%;
+  --r-header-action-x: 83.120%; --r-header-action-y: 1.130%; --r-header-action-w: 14.190%; --r-header-action-h: 4.440%;
+  --r-header-action-cap: 14px; --r-header-action-font: 20px;
+  --r-hero-headline-x: 2.820%; --r-hero-headline-y: 12.850%; --r-hero-headline-w: 34.160%; --r-hero-headline-h: 16.350%;
+  --r-hero-headline-cap: 42px; --r-hero-headline-font: 61px; --r-hero-headline-family: 'Atkinson Hyperlegible'; --r-hero-headline-weight: 700;
+  --r-hero-description-x: 2.890%; --r-hero-description-y: 30.620%; --r-hero-description-w: 33.960%; --r-hero-description-h: 12.480%;
+  --r-hero-description-cap: 15px; --r-hero-description-font: 22px;
+  --r-feature-one-icon-x: 2.960%; --r-feature-one-icon-y: 46.790%; --r-feature-one-icon-w: 3.500%; --r-feature-one-icon-h: 5.480%;
+  --r-feature-one-title-x: 8.340%; --r-feature-one-title-y: 46.980%; --r-feature-one-title-w: 27.440%; --r-feature-one-title-h: 2.840%;
+  --r-feature-one-title-cap: 16px; --r-feature-one-title-font: 23px;
+  --r-feature-one-copy-x: 8.410%; --r-feature-one-copy-y: 50.280%; --r-feature-one-copy-w: 27.980%; --r-feature-one-copy-h: 3.970%;
+  --r-feature-one-copy-cap: 12px; --r-feature-one-copy-font: 17px;
+  --r-feature-two-icon-x: 2.960%; --r-feature-two-icon-y: 56.050%; --r-feature-two-icon-w: 3.500%; --r-feature-two-icon-h: 5.770%;
+  --r-feature-two-title-x: 8.340%; --r-feature-two-title-y: 56.240%; --r-feature-two-title-w: 28.240%; --r-feature-two-title-h: 2.840%;
+  --r-feature-two-title-cap: 16px; --r-feature-two-title-font: 24px;
+  --r-feature-two-copy-x: 8.410%; --r-feature-two-copy-y: 59.360%; --r-feature-two-copy-w: 28.240%; --r-feature-two-copy-h: 4.060%;
+  --r-feature-two-copy-cap: 13px; --r-feature-two-copy-font: 19px;
+  --r-feature-three-icon-x: 2.960%; --r-feature-three-icon-y: 65.690%; --r-feature-three-icon-w: 3.500%; --r-feature-three-icon-h: 5.950%;
+  --r-feature-three-title-x: 8.340%; --r-feature-three-title-y: 65.970%; --r-feature-three-title-w: 28.240%; --r-feature-three-title-h: 2.840%;
+  --r-feature-three-title-cap: 16px; --r-feature-three-title-font: 24px;
+  --r-feature-three-copy-x: 8.410%; --r-feature-three-copy-y: 69.090%; --r-feature-three-copy-w: 28.580%; --r-feature-three-copy-h: 5.200%;
+  --r-feature-three-copy-cap: 13px; --r-feature-three-copy-font: 20px;
+  --r-offer-panel-x: 39.140%; --r-offer-panel-y: 12.480%; --r-offer-panel-w: 58.440%; --r-offer-panel-h: 62.380%;
+  --r-offer-icon-x: 41.430%; --r-offer-icon-y: 14.840%; --r-offer-icon-w: 3.560%; --r-offer-icon-h: 5.100%;
+  --r-offer-title-x: 47.610%; --r-offer-title-y: 15.310%; --r-offer-title-w: 26.630%; --r-offer-title-h: 5.480%;
+  --r-offer-title-cap: 24px; --r-offer-title-font: 35px;
+  --r-offer-disclaimer-x: 75.180%; --r-offer-disclaimer-y: 15.030%; --r-offer-disclaimer-w: 20.780%; --r-offer-disclaimer-h: 5.290%;
+  --r-offer-disclaimer-cap: 11px; --r-offer-disclaimer-font: 16px;
+  --r-buyer-row-one-x: 41.630%; --r-buyer-row-one-y: 25.800%; --r-buyer-row-one-w: 13.450%; --r-buyer-row-one-h: 5.860%;
+  --r-buyer-one-x: 46.070%; --r-buyer-one-y: 26.560%; --r-buyer-one-w: 8.610%; --r-buyer-one-h: 4.540%;
+  --r-buyer-one-cap: 13px; --r-buyer-one-font: 19px;
+  --r-buyer-one-icon-x: 42.970%; --r-buyer-one-icon-y: 26.560%; --r-buyer-one-icon-w: 2.690%; --r-buyer-one-icon-h: 4.060%;
+  --r-buyer-row-two-x: 41.630%; --r-buyer-row-two-y: 32.700%; --r-buyer-row-two-w: 13.450%; --r-buyer-row-two-h: 5.860%;
+  --r-buyer-two-x: 46.070%; --r-buyer-two-y: 33.460%; --r-buyer-two-w: 8.610%; --r-buyer-two-h: 4.540%;
+  --r-buyer-two-cap: 12px; --r-buyer-two-font: 18px;
+  --r-buyer-two-icon-x: 42.970%; --r-buyer-two-icon-y: 33.460%; --r-buyer-two-icon-w: 2.690%; --r-buyer-two-icon-h: 4.060%;
+  --r-buyer-row-three-x: 41.630%; --r-buyer-row-three-y: 39.600%; --r-buyer-row-three-w: 13.450%; --r-buyer-row-three-h: 5.860%;
+  --r-buyer-three-x: 46.070%; --r-buyer-three-y: 40.260%; --r-buyer-three-w: 8.610%; --r-buyer-three-h: 4.540%;
+  --r-buyer-three-cap: 13px; --r-buyer-three-font: 19px;
+  --r-buyer-three-icon-x: 42.970%; --r-buyer-three-icon-y: 40.260%; --r-buyer-three-icon-w: 2.690%; --r-buyer-three-icon-h: 4.060%;
+  --r-demand-join-x: 55.280%; --r-demand-join-y: 28.070%; --r-demand-join-w: 6.460%; --r-demand-join-h: 15.120%;
+  --r-demand-combined-x: 61.740%; --r-demand-combined-y: 31.190%; --r-demand-combined-w: 15.470%; --r-demand-combined-h: 8.700%;
+  --r-demand-combined-icon-x: 63.620%; --r-demand-combined-icon-y: 32.700%; --r-demand-combined-icon-w: 3.030%; --r-demand-combined-icon-h: 4.630%;
+  --r-demand-combined-label-x: 68.190%; --r-demand-combined-label-y: 33.180%; --r-demand-combined-label-w: 8.000%; --r-demand-combined-label-h: 5.200%;
+  --r-demand-combined-label-cap: 14px; --r-demand-combined-label-font: 21px;
+  --r-demand-to-moq-x: 77.140%; --r-demand-to-moq-y: 32.800%; --r-demand-to-moq-w: 4.440%; --r-demand-to-moq-h: 3.690%;
+  --r-operator-moq-x: 81.370%; --r-operator-moq-y: 31.000%; --r-operator-moq-w: 14.320%; --r-operator-moq-h: 9.360%;
+  --r-operator-moq-icon-x: 83.460%; --r-operator-moq-icon-y: 32.610%; --r-operator-moq-icon-w: 3.030%; --r-operator-moq-icon-h: 4.910%;
+  --r-operator-moq-label-x: 87.420%; --r-operator-moq-label-y: 32.700%; --r-operator-moq-label-w: 7.400%; --r-operator-moq-label-h: 5.950%;
+  --r-operator-moq-label-cap: 14px; --r-operator-moq-label-font: 21px;
+  --r-demand-progress-x: 41.360%; --r-demand-progress-y: 49.240%; --r-demand-progress-w: 54.140%; --r-demand-progress-h: 5.670%;
+  --r-demand-progress-flag-x: 89.440%; --r-demand-progress-flag-y: 46.880%; --r-demand-progress-flag-w: 5.040%; --r-demand-progress-flag-h: 6.900%;
+  --r-success-outcome-x: 41.160%; --r-success-outcome-y: 57.370%; --r-success-outcome-w: 25.820%; --r-success-outcome-h: 14.460%;
+  --r-success-icon-x: 42.700%; --r-success-icon-y: 59.830%; --r-success-icon-w: 2.820%; --r-success-icon-h: 3.970%;
+  --r-success-outcome-title-x: 46.540%; --r-success-outcome-title-y: 59.830%; --r-success-outcome-title-w: 18.490%; --r-success-outcome-title-h: 3.400%;
+  --r-success-outcome-title-cap: 17px; --r-success-outcome-title-font: 24px;
+  --r-success-outcome-copy-x: 47.070%; --r-success-outcome-copy-y: 63.800%; --r-success-outcome-copy-w: 18.020%; --r-success-outcome-copy-h: 6.140%;
+  --r-success-outcome-copy-cap: 12px; --r-success-outcome-copy-font: 18px;
+  --r-refund-outcome-x: 68.120%; --r-refund-outcome-y: 57.370%; --r-refund-outcome-w: 27.840%; --r-refund-outcome-h: 14.460%;
+  --r-refund-icon-x: 69.870%; --r-refund-icon-y: 59.830%; --r-refund-icon-w: 2.890%; --r-refund-icon-h: 3.970%;
+  --r-refund-outcome-title-x: 74.240%; --r-refund-outcome-title-y: 59.360%; --r-refund-outcome-title-w: 20.170%; --r-refund-outcome-title-h: 5.010%;
+  --r-refund-outcome-title-cap: 16px; --r-refund-outcome-title-font: 24px;
+  --r-refund-outcome-copy-x: 74.240%; --r-refund-outcome-copy-y: 65.120%; --r-refund-outcome-copy-w: 20.170%; --r-refund-outcome-copy-h: 4.630%;
+  --r-refund-outcome-copy-cap: 12px; --r-refund-outcome-copy-font: 18px;
+  --r-roadmap-heading-x: 2.490%; --r-roadmap-heading-y: 80.720%; --r-roadmap-heading-w: 17.150%; --r-roadmap-heading-h: 4.540%;
+  --r-roadmap-heading-cap: 26px; --r-roadmap-heading-font: 38px;
+  --r-roadmap-intro-x: 2.560%; --r-roadmap-intro-y: 86.200%; --r-roadmap-intro-w: 17.010%; --r-roadmap-intro-h: 10.020%;
+  --r-roadmap-intro-cap: 12px; --r-roadmap-intro-font: 18px;
+  --r-roadmap-arrow-one-x: 38.940%; --r-roadmap-arrow-one-y: 89.320%; --r-roadmap-arrow-one-w: 2.420%; --r-roadmap-arrow-one-h: 2.460%;
+  --r-roadmap-arrow-two-x: 58.840%; --r-roadmap-arrow-two-y: 89.320%; --r-roadmap-arrow-two-w: 2.420%; --r-roadmap-arrow-two-h: 2.460%;
+  --r-roadmap-arrow-three-x: 78.210%; --r-roadmap-arrow-three-y: 89.320%; --r-roadmap-arrow-three-w: 2.420%; --r-roadmap-arrow-three-h: 2.460%;
+  --r-mvp-roadmap-card-x: 20.980%; --r-mvp-roadmap-card-y: 81.570%; --r-mvp-roadmap-card-w: 18.090%; --r-mvp-roadmap-card-h: 15.500%;
+  --r-phase-two-card-x: 41.160%; --r-phase-two-card-y: 81.570%; --r-phase-two-card-w: 17.750%; --r-phase-two-card-h: 15.500%;
+  --r-phase-three-card-x: 60.460%; --r-phase-three-card-y: 81.570%; --r-phase-three-card-w: 17.750%; --r-phase-three-card-h: 15.500%;
+  --r-phase-four-card-x: 79.890%; --r-phase-four-card-y: 81.570%; --r-phase-four-card-w: 17.820%; --r-phase-four-card-h: 15.500%;
+  --r-mvp-phase-icon-x: 22.260%; --r-mvp-phase-icon-y: 82.990%; --r-mvp-phase-icon-w: 2.690%; --r-mvp-phase-icon-h: 3.590%;
+  --r-phase-two-icon-x: 42.370%; --r-phase-two-icon-y: 82.990%; --r-phase-two-icon-w: 2.820%; --r-phase-two-icon-h: 3.590%;
+  --r-phase-three-icon-x: 61.740%; --r-phase-three-icon-y: 82.990%; --r-phase-three-icon-w: 2.820%; --r-phase-three-icon-h: 3.590%;
+  --r-phase-four-icon-x: 81.100%; --r-phase-four-icon-y: 82.990%; --r-phase-four-icon-w: 2.820%; --r-phase-four-icon-h: 3.590%;
+  --r-mvp-card-title-x: 25.890%; --r-mvp-card-title-y: 83.360%; --r-mvp-card-title-w: 5.510%; --r-mvp-card-title-h: 2.930%;
+  --r-mvp-card-title-cap: 15px; --r-mvp-card-title-font: 22px;
+  --r-mvp-card-status-x: 32.010%; --r-mvp-card-status-y: 83.740%; --r-mvp-card-status-w: 6.590%; --r-mvp-card-status-h: 2.650%;
+  --r-mvp-card-copy-x: 22.130%; --r-mvp-card-copy-y: 87.900%; --r-mvp-card-copy-w: 15.740%; --r-mvp-card-copy-h: 8.320%;
+  --r-mvp-card-copy-cap: 12px; --r-mvp-card-copy-font: 18px;
+  --r-phase-two-title-x: 44.180%; --r-phase-two-title-y: 83.460%; --r-phase-two-title-w: 6.790%; --r-phase-two-title-h: 2.930%;
+  --r-phase-two-title-cap: 15px; --r-phase-two-title-font: 22px;
+  --r-phase-two-status-x: 51.580%; --r-phase-two-status-y: 83.740%; --r-phase-two-status-w: 6.660%; --r-phase-two-status-h: 2.650%;
+  --r-phase-two-status-cap: 10px; --r-phase-two-status-font: 14px;
+  --r-phase-two-copy-x: 42.500%; --r-phase-two-copy-y: 87.900%; --r-phase-two-copy-w: 15.200%; --r-phase-two-copy-h: 8.320%;
+  --r-phase-two-copy-cap: 13px; --r-phase-two-copy-font: 19px;
+  --r-phase-three-title-x: 63.420%; --r-phase-three-title-y: 83.460%; --r-phase-three-title-w: 6.720%; --r-phase-three-title-h: 2.930%;
+  --r-phase-three-title-cap: 15px; --r-phase-three-title-font: 22px;
+  --r-phase-three-status-x: 70.810%; --r-phase-three-status-y: 83.740%; --r-phase-three-status-w: 6.720%; --r-phase-three-status-h: 2.650%;
+  --r-phase-three-status-cap: 10px; --r-phase-three-status-font: 14px;
+  --r-phase-three-copy-x: 61.800%; --r-phase-three-copy-y: 87.900%; --r-phase-three-copy-w: 15.200%; --r-phase-three-copy-h: 8.320%;
+  --r-phase-three-copy-cap: 13px; --r-phase-three-copy-font: 19px;
+  --r-phase-four-title-x: 82.920%; --r-phase-four-title-y: 83.460%; --r-phase-four-title-w: 6.590%; --r-phase-four-title-h: 2.930%;
+  --r-phase-four-title-cap: 16px; --r-phase-four-title-font: 23px;
+  --r-phase-four-status-x: 90.110%; --r-phase-four-status-y: 83.740%; --r-phase-four-status-w: 6.860%; --r-phase-four-status-h: 2.650%;
+  --r-phase-four-status-cap: 10px; --r-phase-four-status-font: 15px;
+  --r-phase-four-copy-x: 81.240%; --r-phase-four-copy-y: 87.900%; --r-phase-four-copy-w: 15.270%; --r-phase-four-copy-h: 8.320%;
+  --r-phase-four-copy-cap: 12px; --r-phase-four-copy-font: 18px;
+}
+
+.comp-frame { position: relative; width: 100%; aspect-ratio: 1487 / 1058; overflow: hidden; }
+.r-site-header { position: absolute; left: var(--r-site-header-x); top: var(--r-site-header-y); width: var(--r-site-header-w); height: var(--r-site-header-h); }
+.r-brand-mark { position: absolute; left: var(--r-brand-mark-x); top: var(--r-brand-mark-y); width: var(--r-brand-mark-w); height: var(--r-brand-mark-h); }
+.r-brand-name { position: absolute; left: var(--r-brand-name-x); top: var(--r-brand-name-y); width: var(--r-brand-name-w); height: var(--r-brand-name-h); }
+.r-brand-description { position: absolute; left: var(--r-brand-description-x); top: var(--r-brand-description-y); width: var(--r-brand-description-w); height: var(--r-brand-description-h); }
+.r-header-navigation { position: absolute; left: var(--r-header-navigation-x); top: var(--r-header-navigation-y); width: var(--r-header-navigation-w); height: var(--r-header-navigation-h); }
+.r-header-action { position: absolute; left: var(--r-header-action-x); top: var(--r-header-action-y); width: var(--r-header-action-w); height: var(--r-header-action-h); }
+.r-hero-headline { position: absolute; left: var(--r-hero-headline-x); top: var(--r-hero-headline-y); width: var(--r-hero-headline-w); height: var(--r-hero-headline-h); }
+.r-hero-description { position: absolute; left: var(--r-hero-description-x); top: var(--r-hero-description-y); width: var(--r-hero-description-w); height: var(--r-hero-description-h); }
+.r-feature-one-icon { position: absolute; left: var(--r-feature-one-icon-x); top: var(--r-feature-one-icon-y); width: var(--r-feature-one-icon-w); height: var(--r-feature-one-icon-h); }
+.r-feature-one-title { position: absolute; left: var(--r-feature-one-title-x); top: var(--r-feature-one-title-y); width: var(--r-feature-one-title-w); height: var(--r-feature-one-title-h); }
+.r-feature-one-copy { position: absolute; left: var(--r-feature-one-copy-x); top: var(--r-feature-one-copy-y); width: var(--r-feature-one-copy-w); height: var(--r-feature-one-copy-h); }
+.r-feature-two-icon { position: absolute; left: var(--r-feature-two-icon-x); top: var(--r-feature-two-icon-y); width: var(--r-feature-two-icon-w); height: var(--r-feature-two-icon-h); }
+.r-feature-two-title { position: absolute; left: var(--r-feature-two-title-x); top: var(--r-feature-two-title-y); width: var(--r-feature-two-title-w); height: var(--r-feature-two-title-h); }
+.r-feature-two-copy { position: absolute; left: var(--r-feature-two-copy-x); top: var(--r-feature-two-copy-y); width: var(--r-feature-two-copy-w); height: var(--r-feature-two-copy-h); }
+.r-feature-three-icon { position: absolute; left: var(--r-feature-three-icon-x); top: var(--r-feature-three-icon-y); width: var(--r-feature-three-icon-w); height: var(--r-feature-three-icon-h); }
+.r-feature-three-title { position: absolute; left: var(--r-feature-three-title-x); top: var(--r-feature-three-title-y); width: var(--r-feature-three-title-w); height: var(--r-feature-three-title-h); }
+.r-feature-three-copy { position: absolute; left: var(--r-feature-three-copy-x); top: var(--r-feature-three-copy-y); width: var(--r-feature-three-copy-w); height: var(--r-feature-three-copy-h); }
+.r-offer-panel { position: absolute; left: var(--r-offer-panel-x); top: var(--r-offer-panel-y); width: var(--r-offer-panel-w); height: var(--r-offer-panel-h); }
+.r-offer-icon { position: absolute; left: var(--r-offer-icon-x); top: var(--r-offer-icon-y); width: var(--r-offer-icon-w); height: var(--r-offer-icon-h); }
+.r-offer-title { position: absolute; left: var(--r-offer-title-x); top: var(--r-offer-title-y); width: var(--r-offer-title-w); height: var(--r-offer-title-h); }
+.r-offer-disclaimer { position: absolute; left: var(--r-offer-disclaimer-x); top: var(--r-offer-disclaimer-y); width: var(--r-offer-disclaimer-w); height: var(--r-offer-disclaimer-h); }
+.r-buyer-row-one { position: absolute; left: var(--r-buyer-row-one-x); top: var(--r-buyer-row-one-y); width: var(--r-buyer-row-one-w); height: var(--r-buyer-row-one-h); }
+.r-buyer-one { position: absolute; left: var(--r-buyer-one-x); top: var(--r-buyer-one-y); width: var(--r-buyer-one-w); height: var(--r-buyer-one-h); }
+.r-buyer-one-icon { position: absolute; left: var(--r-buyer-one-icon-x); top: var(--r-buyer-one-icon-y); width: var(--r-buyer-one-icon-w); height: var(--r-buyer-one-icon-h); }
+.r-buyer-row-two { position: absolute; left: var(--r-buyer-row-two-x); top: var(--r-buyer-row-two-y); width: var(--r-buyer-row-two-w); height: var(--r-buyer-row-two-h); }
+.r-buyer-two { position: absolute; left: var(--r-buyer-two-x); top: var(--r-buyer-two-y); width: var(--r-buyer-two-w); height: var(--r-buyer-two-h); }
+.r-buyer-two-icon { position: absolute; left: var(--r-buyer-two-icon-x); top: var(--r-buyer-two-icon-y); width: var(--r-buyer-two-icon-w); height: var(--r-buyer-two-icon-h); }
+.r-buyer-row-three { position: absolute; left: var(--r-buyer-row-three-x); top: var(--r-buyer-row-three-y); width: var(--r-buyer-row-three-w); height: var(--r-buyer-row-three-h); }
+.r-buyer-three { position: absolute; left: var(--r-buyer-three-x); top: var(--r-buyer-three-y); width: var(--r-buyer-three-w); height: var(--r-buyer-three-h); }
+.r-buyer-three-icon { position: absolute; left: var(--r-buyer-three-icon-x); top: var(--r-buyer-three-icon-y); width: var(--r-buyer-three-icon-w); height: var(--r-buyer-three-icon-h); }
+.r-demand-join { position: absolute; left: var(--r-demand-join-x); top: var(--r-demand-join-y); width: var(--r-demand-join-w); height: var(--r-demand-join-h); }
+.r-demand-combined { position: absolute; left: var(--r-demand-combined-x); top: var(--r-demand-combined-y); width: var(--r-demand-combined-w); height: var(--r-demand-combined-h); }
+.r-demand-combined-icon { position: absolute; left: var(--r-demand-combined-icon-x); top: var(--r-demand-combined-icon-y); width: var(--r-demand-combined-icon-w); height: var(--r-demand-combined-icon-h); }
+.r-demand-combined-label { position: absolute; left: var(--r-demand-combined-label-x); top: var(--r-demand-combined-label-y); width: var(--r-demand-combined-label-w); height: var(--r-demand-combined-label-h); }
+.r-demand-to-moq { position: absolute; left: var(--r-demand-to-moq-x); top: var(--r-demand-to-moq-y); width: var(--r-demand-to-moq-w); height: var(--r-demand-to-moq-h); }
+.r-operator-moq { position: absolute; left: var(--r-operator-moq-x); top: var(--r-operator-moq-y); width: var(--r-operator-moq-w); height: var(--r-operator-moq-h); }
+.r-operator-moq-icon { position: absolute; left: var(--r-operator-moq-icon-x); top: var(--r-operator-moq-icon-y); width: var(--r-operator-moq-icon-w); height: var(--r-operator-moq-icon-h); }
+.r-operator-moq-label { position: absolute; left: var(--r-operator-moq-label-x); top: var(--r-operator-moq-label-y); width: var(--r-operator-moq-label-w); height: var(--r-operator-moq-label-h); }
+.r-demand-progress { position: absolute; left: var(--r-demand-progress-x); top: var(--r-demand-progress-y); width: var(--r-demand-progress-w); height: var(--r-demand-progress-h); }
+.r-demand-progress-flag { position: absolute; left: var(--r-demand-progress-flag-x); top: var(--r-demand-progress-flag-y); width: var(--r-demand-progress-flag-w); height: var(--r-demand-progress-flag-h); }
+.r-success-outcome { position: absolute; left: var(--r-success-outcome-x); top: var(--r-success-outcome-y); width: var(--r-success-outcome-w); height: var(--r-success-outcome-h); }
+.r-success-icon { position: absolute; left: var(--r-success-icon-x); top: var(--r-success-icon-y); width: var(--r-success-icon-w); height: var(--r-success-icon-h); }
+.r-success-outcome-title { position: absolute; left: var(--r-success-outcome-title-x); top: var(--r-success-outcome-title-y); width: var(--r-success-outcome-title-w); height: var(--r-success-outcome-title-h); }
+.r-success-outcome-copy { position: absolute; left: var(--r-success-outcome-copy-x); top: var(--r-success-outcome-copy-y); width: var(--r-success-outcome-copy-w); height: var(--r-success-outcome-copy-h); }
+.r-refund-outcome { position: absolute; left: var(--r-refund-outcome-x); top: var(--r-refund-outcome-y); width: var(--r-refund-outcome-w); height: var(--r-refund-outcome-h); }
+.r-refund-icon { position: absolute; left: var(--r-refund-icon-x); top: var(--r-refund-icon-y); width: var(--r-refund-icon-w); height: var(--r-refund-icon-h); }
+.r-refund-outcome-title { position: absolute; left: var(--r-refund-outcome-title-x); top: var(--r-refund-outcome-title-y); width: var(--r-refund-outcome-title-w); height: var(--r-refund-outcome-title-h); }
+.r-refund-outcome-copy { position: absolute; left: var(--r-refund-outcome-copy-x); top: var(--r-refund-outcome-copy-y); width: var(--r-refund-outcome-copy-w); height: var(--r-refund-outcome-copy-h); }
+.r-roadmap-heading { position: absolute; left: var(--r-roadmap-heading-x); top: var(--r-roadmap-heading-y); width: var(--r-roadmap-heading-w); height: var(--r-roadmap-heading-h); }
+.r-roadmap-intro { position: absolute; left: var(--r-roadmap-intro-x); top: var(--r-roadmap-intro-y); width: var(--r-roadmap-intro-w); height: var(--r-roadmap-intro-h); }
+.r-roadmap-arrow-one { position: absolute; left: var(--r-roadmap-arrow-one-x); top: var(--r-roadmap-arrow-one-y); width: var(--r-roadmap-arrow-one-w); height: var(--r-roadmap-arrow-one-h); }
+.r-roadmap-arrow-two { position: absolute; left: var(--r-roadmap-arrow-two-x); top: var(--r-roadmap-arrow-two-y); width: var(--r-roadmap-arrow-two-w); height: var(--r-roadmap-arrow-two-h); }
+.r-roadmap-arrow-three { position: absolute; left: var(--r-roadmap-arrow-three-x); top: var(--r-roadmap-arrow-three-y); width: var(--r-roadmap-arrow-three-w); height: var(--r-roadmap-arrow-three-h); }
+.r-mvp-roadmap-card { position: absolute; left: var(--r-mvp-roadmap-card-x); top: var(--r-mvp-roadmap-card-y); width: var(--r-mvp-roadmap-card-w); height: var(--r-mvp-roadmap-card-h); }
+.r-phase-two-card { position: absolute; left: var(--r-phase-two-card-x); top: var(--r-phase-two-card-y); width: var(--r-phase-two-card-w); height: var(--r-phase-two-card-h); }
+.r-phase-three-card { position: absolute; left: var(--r-phase-three-card-x); top: var(--r-phase-three-card-y); width: var(--r-phase-three-card-w); height: var(--r-phase-three-card-h); }
+.r-phase-four-card { position: absolute; left: var(--r-phase-four-card-x); top: var(--r-phase-four-card-y); width: var(--r-phase-four-card-w); height: var(--r-phase-four-card-h); }
+.r-mvp-phase-icon { position: absolute; left: var(--r-mvp-phase-icon-x); top: var(--r-mvp-phase-icon-y); width: var(--r-mvp-phase-icon-w); height: var(--r-mvp-phase-icon-h); }
+.r-phase-two-icon { position: absolute; left: var(--r-phase-two-icon-x); top: var(--r-phase-two-icon-y); width: var(--r-phase-two-icon-w); height: var(--r-phase-two-icon-h); }
+.r-phase-three-icon { position: absolute; left: var(--r-phase-three-icon-x); top: var(--r-phase-three-icon-y); width: var(--r-phase-three-icon-w); height: var(--r-phase-three-icon-h); }
+.r-phase-four-icon { position: absolute; left: var(--r-phase-four-icon-x); top: var(--r-phase-four-icon-y); width: var(--r-phase-four-icon-w); height: var(--r-phase-four-icon-h); }
+.r-mvp-card-title { position: absolute; left: var(--r-mvp-card-title-x); top: var(--r-mvp-card-title-y); width: var(--r-mvp-card-title-w); height: var(--r-mvp-card-title-h); }
+.r-mvp-card-status { position: absolute; left: var(--r-mvp-card-status-x); top: var(--r-mvp-card-status-y); width: var(--r-mvp-card-status-w); height: var(--r-mvp-card-status-h); }
+.r-mvp-card-copy { position: absolute; left: var(--r-mvp-card-copy-x); top: var(--r-mvp-card-copy-y); width: var(--r-mvp-card-copy-w); height: var(--r-mvp-card-copy-h); }
+.r-phase-two-title { position: absolute; left: var(--r-phase-two-title-x); top: var(--r-phase-two-title-y); width: var(--r-phase-two-title-w); height: var(--r-phase-two-title-h); }
+.r-phase-two-status { position: absolute; left: var(--r-phase-two-status-x); top: var(--r-phase-two-status-y); width: var(--r-phase-two-status-w); height: var(--r-phase-two-status-h); }
+.r-phase-two-copy { position: absolute; left: var(--r-phase-two-copy-x); top: var(--r-phase-two-copy-y); width: var(--r-phase-two-copy-w); height: var(--r-phase-two-copy-h); }
+.r-phase-three-title { position: absolute; left: var(--r-phase-three-title-x); top: var(--r-phase-three-title-y); width: var(--r-phase-three-title-w); height: var(--r-phase-three-title-h); }
+.r-phase-three-status { position: absolute; left: var(--r-phase-three-status-x); top: var(--r-phase-three-status-y); width: var(--r-phase-three-status-w); height: var(--r-phase-three-status-h); }
+.r-phase-three-copy { position: absolute; left: var(--r-phase-three-copy-x); top: var(--r-phase-three-copy-y); width: var(--r-phase-three-copy-w); height: var(--r-phase-three-copy-h); }
+.r-phase-four-title { position: absolute; left: var(--r-phase-four-title-x); top: var(--r-phase-four-title-y); width: var(--r-phase-four-title-w); height: var(--r-phase-four-title-h); }
+.r-phase-four-status { position: absolute; left: var(--r-phase-four-status-x); top: var(--r-phase-four-status-y); width: var(--r-phase-four-status-w); height: var(--r-phase-four-status-h); }
+.r-phase-four-copy { position: absolute; left: var(--r-phase-four-copy-x); top: var(--r-phase-four-copy-y); width: var(--r-phase-four-copy-w); height: var(--r-phase-four-copy-h); }

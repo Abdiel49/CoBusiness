@@ -1,0 +1,79 @@
+{
+  "title": "Elige la dirección visual de CoBusiness",
+  "question": "¿Qué mundo visual debería llevar la landing para que importadores y operadores entiendan la compra colectiva y su roadmap? Puedes conservar la dirección asignada, elegir otra, volver a lo conocido o pedir una nueva ronda.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "Fillmore Handbill",
+      "kicker": "THE ROLL",
+      "lineage": "Carteles impresos de conciertos del Fillmore, 1966–1971",
+      "thesis": "Una hoja de convocatoria convierte cada compra colectiva en una oportunidad comercial legible.",
+      "palette": ["#e8452c", "#f5d64c", "#1b2a52", "#f3ead8"],
+      "materials": ["letterpress", "tinta de dos tonos"],
+      "viewport": "Una hoja impresa a sangre presenta la compra colectiva, el mecanismo del MVP y la acción para recorrerlo.",
+      "risk": "La nostalgia psicodélica puede restar claridad y credibilidad B2B.",
+      "raised": [
+        { "from": "Tablero ANSI BBS", "raise": "La dirección ocupa la página como una hoja informativa continua y legible." }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.png"
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "Folio de compra compartida",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Órdenes de compra y hojas autocopiativas de comercio mayorista",
+      "thesis": "Un folio compartido hace visible cómo varios pedidos se reúnen en una sola orden.",
+      "palette": ["#f4efe4", "#183a36", "#cf5037", "#d5bd83"],
+      "materials": ["papel autocopiativo", "tinta de registro"],
+      "viewport": "Un folio de pedido conecta aportes, meta mínima y resultado condicionado en una composición editorial amplia.",
+      "risk": "Puede parecer una factura estática si no se muestra la participación colectiva.",
+      "comp": ".impeccable/mocks/decision/model-pick.png"
+    },
+    {
+      "id": "challenger-teletext",
+      "kind": "challenger",
+      "catalogId": "broadcast-programming-teletext-service",
+      "label": "Índice de teletexto",
+      "lineage": "Revistas de programación en teletexto",
+      "thesis": "Un índice de operaciones muestra el MVP como una secuencia de estados verificables.",
+      "palette": ["#0000c0", "#ffff00", "#00c000", "#ffffff"],
+      "materials": ["mosaico de bloques", "brillo de fósforo"],
+      "viewport": "Una portada tipo índice enumera oferta, aportes, meta, vencimiento y resultado.",
+      "risk": "La cuadrícula puede sentirse como novedad retro si debilita la lectura B2B.",
+      "case": "Competitiva: ordena bien los estados del flujo, aunque el folio comunica mejor la compra colectiva.",
+      "verdict": "competitive",
+      "comp": ".impeccable/mocks/decision/challenger-teletext.png",
+      "hero": "https://impeccable.style/worlds/cards/broadcast-programming-teletext-service-hero.webp"
+    },
+    {
+      "id": "challenger-microfiche",
+      "kind": "challenger",
+      "catalogId": "medium-native-ansi-bbs-nightboard",
+      "label": "Tablero ANSI BBS",
+      "lineage": "Tableros de anuncios de sistemas BBS en ANSI",
+      "thesis": "Un tablero de mensajes organiza ofertas y aportes como conversaciones de una comunidad.",
+      "palette": ["#101418", "#47dd70", "#d9e6dc"],
+      "materials": ["caracteres de bloque", "terminal fosforescente"],
+      "viewport": "Una pantalla de anuncios presenta una oferta, sus aportes y el estado del mínimo.",
+      "risk": "La terminal puede comunicar una herramienta técnica antes que un servicio de comercio.",
+      "case": "Se descarta porque los participantes necesitan entender la oferta y sus condiciones antes de explorar una interfaz de mensajes.",
+      "kept": "Conservar la jerarquía clara y el contraste de los mensajes.",
+      "verdict": "declined"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "comp", "toggle": true },
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "Estándar de categoría",
+    "thesis": "Una landing B2B editorial presenta el problema, el flujo del MVP y las fases del roadmap.",
+    "palette": ["#ffffff", "#111827", "#2563eb"],
+    "materials": ["retícula limpia", "fotografía de producto"],
+    "viewport": "Un titular y una acción conducen a una descripción convencional del MVP y sus fases.",
+    "risk": "La composición puede resultar indistinguible de otras páginas SaaS.",
+    "comp": ".impeccable/mocks/decision/canon.png"
+  }
+}

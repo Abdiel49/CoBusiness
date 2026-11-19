@@ -1,0 +1,41 @@
+{
+  "title": "Aprueba la composición de la landing",
+  "question": "La dirección elegida es una landing B2B convencional. ¿Qué estructura comunica mejor el flujo previsto y el roadmap de CoBusiness? Revisa la composición completa y confirma la opción o pide revisarla.",
+  "options": [
+    {
+      "id": "approved-direction",
+      "kind": "assigned",
+      "label": "Resumen y oferta colectiva",
+      "thesis": "El visitante comprende la propuesta a la izquierda y consulta el mecanismo en una oferta ilustrativa a la derecha.",
+      "palette": ["#ffffff", "#111827", "#2563eb"],
+      "materials": ["retícula limpia", "panel de producto"],
+      "viewport": "Hero de dos columnas, flujo ilustrativo de orden colectiva y roadmap de cuatro fases debajo.",
+      "risk": "Los datos del panel podrían parecer actividad real si no se identifican como ilustrativos.",
+      "comp": ".impeccable/mocks/decision/canon.png"
+    },
+    {
+      "id": "offer-led",
+      "kind": "dealt",
+      "label": "Oferta primero",
+      "thesis": "Una oferta colectiva ilustrativa convierte el mecanismo de la compra en el centro de la página.",
+      "palette": ["#ffffff", "#111827", "#2563eb"],
+      "materials": ["retícula limpia", "panel de producto"],
+      "viewport": "Titular y explicación junto a un panel grande de oferta, seguido por el camino de éxito o reembolso y el roadmap.",
+      "risk": "El panel puede dominar la propuesta si la explicación del rol del operador queda demasiado pequeña.",
+      "comp": ".impeccable/mocks/cobusiness-offer-led.png"
+    },
+    {
+      "id": "roadmap-led",
+      "kind": "dealt",
+      "label": "Flujo y fases",
+      "thesis": "Una secuencia de pasos explica cómo los pedidos separados se convierten en una orden colectiva.",
+      "palette": ["#ffffff", "#111827", "#2563eb"],
+      "materials": ["retícula limpia", "secuencia de pasos"],
+      "viewport": "Titular sobre cuatro pasos del MVP, ejemplo ilustrativo y roadmap sin fechas como cierre principal.",
+      "risk": "Una secuencia extensa puede posponer la explicación de a quién sirve la plataforma.",
+      "comp": ".impeccable/mocks/cobusiness-roadmap-led.png"
+    }
+  ],
+  "buildPath": { "value": "comp", "toggle": true },
+  "reroll": { "registers": ["safer", "bolder"] }
+}
