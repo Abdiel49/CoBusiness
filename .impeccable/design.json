@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-19T20:56:30Z",
+  "title": "Design System: CoBusiness",
+  "extensions": {
+    "colorMeta": {
+      "page": { "role": "neutral", "displayName": "Cool Page", "canonical": "#f5f7f7" },
+      "surface": { "role": "neutral", "displayName": "White Surface", "canonical": "#ffffff" },
+      "ink": { "role": "neutral", "displayName": "Near-Black Ink", "canonical": "#09090c" },
+      "body": { "role": "neutral", "displayName": "Slate Body", "canonical": "#393d4c" },
+      "muted": { "role": "neutral", "displayName": "Muted Slate", "canonical": "#555b69" },
+      "line": { "role": "neutral", "displayName": "Compact Border", "canonical": "#d9e0e8" },
+      "blue": { "role": "primary", "displayName": "Working Blue", "canonical": "#0c57de" },
+      "blue-dark": { "role": "primary", "displayName": "Deep Blue", "canonical": "#0848bf" },
+      "blue-wash": { "role": "primary", "displayName": "Blue Wash", "canonical": "#edf4ff" },
+      "green": { "role": "semantic", "displayName": "Success Green", "canonical": "#138258" },
+      "green-wash": { "role": "semantic", "displayName": "Success Wash", "canonical": "#eff9f4" },
+      "red": { "role": "semantic", "displayName": "Refund Red", "canonical": "#c83f49" },
+      "red-wash": { "role": "semantic", "displayName": "Refund Wash", "canonical": "#fff2f1" },
+      "conditional-wash": { "role": "semantic", "displayName": "Conditional Amber Wash", "canonical": "#fff4dc" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Hero Display", "purpose": "The main hero statement." },
+      "headline": { "displayName": "Section Headline", "purpose": "Major explanatory section headings." },
+      "title": { "displayName": "Content Title", "purpose": "Workflow and content titles." },
+      "body": { "displayName": "Body", "purpose": "Default explanatory copy." },
+      "label": { "displayName": "Label", "purpose": "Role labels, workflow labels, and small metadata." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "action-hover", "value": "160ms ease", "purpose": "Primary action background, border, and lift response." },
+      { "name": "demand-join-emphasis", "value": "520ms–680ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Brief emphasis as the demand connector appears." }
+    ],
+    "breakpoints": [
+      { "name": "tablet-layout", "value": "1120px" },
+      { "name": "mobile-layout", "value": "760px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main in-page action, paired with a directional arrow where shown.",
+      "html": "<a class=\"ds-button-primary\" href=\"#mvp\">Recorrer el MVP <span aria-hidden=\"true\">→</span></a>",
+      "css": ".ds-button-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 16px; border: 1px solid #176bef; border-radius: 11px; background: linear-gradient(135deg, #347ff3 0%, var(--blue) 100%); color: #fff; font: 700 16px/1 'Atkinson Hyperlegible', Arial, sans-serif; letter-spacing: -0.02em; text-decoration: none; transition: background-color 160ms ease, border-color 160ms ease, transform 160ms ease; } .ds-button-primary:hover { transform: translateY(-1px); border-color: var(--blue-dark); background: var(--blue-dark); } .ds-button-primary:focus-visible { outline: 3px solid #174fae; outline-offset: 4px; } .ds-button-primary:active { transform: translateY(0); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "description": "A slim anchor navigation alongside the wordmark.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Navegación principal\"><a href=\"#how-it-works\">Cómo funciona</a><a href=\"#mvp\">MVP</a><a href=\"#roadmap\">Roadmap</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: flex-end; gap: 22px; color: var(--ink); font: 700 15px/1.3 'Atkinson Hyperlegible', Arial, sans-serif; } .ds-nav a { color: inherit; text-decoration: none; } .ds-nav a:hover { text-decoration: underline; text-underline-offset: 0.24em; } .ds-nav a:focus-visible { outline: 3px solid #174fae; outline-offset: 4px; border-radius: 4px; }"
+    },
+    {
+      "name": "Illustrative Offer Panel",
+      "kind": "card",
+      "refersTo": "offer-card",
+      "description": "The central offer preview that explains how buyer demand joins toward an operator MOQ.",
+      "html": "<article class=\"ds-offer-card\"><p class=\"ds-offer-note\">Flujo ilustrativo · MVP previsto en Stellar Testnet · Sin fondos reales</p><div class=\"ds-offer-flow\"><span>Comprador</span><span>Demanda combinada</span><span>MOQ del operador</span></div><div class=\"ds-outcomes\"><div class=\"ds-outcome-success\">Objetivo alcanzado</div><div class=\"ds-outcome-refund\">Objetivo no alcanzado</div></div></article>",
+      "css": ".ds-offer-card { padding: 24px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--ink); font-family: 'Atkinson Hyperlegible', Arial, sans-serif; } .ds-offer-note { margin: 0 0 20px; padding: 9px 12px; border-radius: 10px; background: var(--blue-wash); color: #1654bf; font-size: 12px; line-height: 1.25; } .ds-offer-flow { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; } .ds-offer-flow span { display: flex; align-items: center; min-height: 48px; padding: 8px 12px; border: 1px solid #dce5f1; border-radius: 12px; background: #f9fbff; font-size: 14px; font-weight: 700; } .ds-outcomes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; } .ds-outcome-success, .ds-outcome-refund { padding: 14px; border-radius: 14px; font-size: 14px; font-weight: 700; } .ds-outcome-success { background: var(--green-wash); color: var(--green); } .ds-outcome-refund { background: var(--red-wash); color: var(--red); }"
+    },
+    {
+      "name": "Roadmap Card",
+      "kind": "card",
+      "refersTo": "roadmap-card",
+      "description": "A compact stage summary; the MVP stage alone is emphasized as the current planned focus.",
+      "html": "<article class=\"ds-roadmap-card\"><div class=\"ds-roadmap-heading\"><strong>MVP</strong><span class=\"ds-status\">Planificado</span></div><p>Validar la compra colectiva en Stellar Testnet, sin fondos reales.</p></article>",
+      "css": ".ds-roadmap-card { padding: 15px 16px 13px; border: 1px solid #d8e0ea; border-radius: 13px; background: var(--surface); color: var(--ink); font-family: 'Atkinson Hyperlegible', Arial, sans-serif; } .ds-roadmap-heading { display: flex; align-items: center; gap: 12px; } .ds-roadmap-heading strong { font-size: 20px; } .ds-status { display: inline-flex; align-items: center; min-height: 27px; padding: 3px 9px; border-radius: 9px; background: #edf0f4; color: #3c4654; font-size: 11.5px; font-weight: 700; line-height: 1; } .ds-roadmap-card p { margin: 12px 0 0; color: var(--body); font-size: 14px; line-height: 1.3; } .ds-roadmap-card:focus-within { border-color: var(--blue); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Collective Order Ledger",
+    "overview": "The page treats the collective order as the clearest visual explanation of the product: separate buyers are shown joining into one demand signal, which is compared with an operator's MOQ. The atmosphere is conventional and businesslike, with open white surfaces, near-black text, a restrained blue action color, and compact neutral borders. Atkinson Hyperlegible keeps the Spanish copy direct and legible across dense commercial conditions.\n\nThe offer panel and roadmap use structured rows and compact cards to make roles, thresholds, conditions, and planned scope easy to scan. Blue is the main interaction and organization color; green and red distinguish the two conditional outcome paths. The page states that the flow is illustrative, planned for Stellar Testnet, and uses no real customer funds. It does not present the roadmap as shipped functionality or claim business results.",
+    "keyCharacteristics": [
+      "Blue-centered, light neutral palette.",
+      "Offer-led information hierarchy with clear commercial conditions.",
+      "Restrained borders and limited card use.",
+      "Spanish-language, B2B-first content for Bolivia.",
+      "Explicit distinction between illustrative MVP scope and real activity."
+    ],
+    "rules": [
+      { "name": "The State-Meaning Rule", "body": "Keep green and red attached to their respective conditional outcomes. They are status cues, not competing brand accents.", "section": "colors" }
+    ],
+    "dos": [
+      "Do use blue for primary actions and the key demand-aggregation path.",
+      "Do use compact borders and pale surface shifts to group information.",
+      "Do keep text in Atkinson Hyperlegible and reserve bold weight for hierarchy and labels.",
+      "Do state when an order example is illustrative and when funds are simulated.",
+      "Do retain the stacked single-column behavior at the mobile breakpoint."
+    ],
+    "donts": [
+      "Don't present illustrative participants, progress, or outcomes as real transaction evidence.",
+      "Don't imply that planned roadmap features are already available.",
+      "Don't imply real customer funds are accepted in the Testnet MVP.",
+      "Don't use green or red as general decorative accents."
+    ]
+  }
+}
