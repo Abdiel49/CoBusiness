@@ -19,6 +19,12 @@
 .quick-secondary { border: 1px solid var(--line); background: var(--surface); color: var(--body); padding: 10px 16px; border-radius: 10px; white-space: nowrap; }
 .quick-secondary:hover { border-color: var(--blue); color: var(--blue); }
 .quick-scenarios { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.quick-role-switcher { margin-bottom: 16px; }
+.quick-role-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+.quick-role-buttons button { flex: 1 1 160px; padding: 10px 12px; min-height: 44px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--body); font-size: 14px; font-weight: 700; }
+.quick-role-buttons button[aria-pressed="true"] { border-color: var(--blue); background: var(--blue-wash); color: var(--blue-dark); }
+.quick-role-buttons button:hover { border-color: var(--blue); }
+.quick-role-switcher p { margin-top: 8px; color: var(--body); font-size: 14px; }
 .quick-scenarios button { text-align: left; border: 1px solid var(--line); border-radius: 12px; padding: 10px 18px; background: var(--surface); font-weight: 700; }
 .quick-scenarios button span { display: block; font-size: 14px; font-weight: 400; color: var(--muted); margin-top: 2px; }
 .quick-scenarios button[aria-pressed="true"] { background: var(--blue-wash); border-color: var(--blue); color: var(--blue-dark); }

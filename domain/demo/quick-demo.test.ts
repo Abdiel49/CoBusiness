@@ -15,7 +15,9 @@ describe("90-second simulated commercial demo", () => {
     expect(state.stage).toBe("funded");
     expect(reduce(state, { type: "authorize" })).toBe(state);
     expect(reduce(state, { type: "release" })).toBe(state);
+    state = reduce(state, { type: "change-role", role: "importer" });
     state = reduce(state, { type: "ratify" });
+    state = reduce(state, { type: "change-role", role: "admin" });
     state = reduce(state, { type: "authorize" });
     state = reduce(state, { type: "release" });
     expect(state.stage).toBe("released");
@@ -39,10 +41,12 @@ describe("90-second simulated commercial demo", () => {
     expect(state.fundedBlocks).toBe(10);
     expect(state.ownBlocks).toBe(1);
     expect(reduce(state, { type: "refund" })).toBe(state);
-    expect(reduce(state, { type: "ratify" })).toBe(state);
+    state = reduce(state, { type: "change-role", role: "importer" });
     state = reduce(state, { type: "reject" });
     expect(reduce(state, { type: "refund" })).toBe(state);
+    state = reduce(state, { type: "change-role", role: "admin" });
     state = reduce(state, { type: "enable-refund" });
+    state = reduce(state, { type: "change-role", role: "buyer" });
     state = reduce(state, { type: "refund" });
     expect(state.stage).toBe("refunded");
     expect(state.events).toHaveLength(4);
@@ -54,5 +58,43 @@ describe("90-second simulated commercial demo", () => {
     state = reduce(state, { type: "contribute" });
     expect(reduce(state, { type: "reset", scenario: "success" })).toEqual(createQuickDemo());
     expect(reduce(state, { type: "reset", scenario: "rejection" })).toEqual(createQuickDemo("rejection"));
+  });
+  it("preserves quantities, terms, balances, stage and history when switching roles", () => {
+    let state = reduce(createQuickDemo(), { type: "select", blocks: 2 });
+    state = reduce(state, { type: "accept", accepted: true });
+    for (const role of ["importer", "admin", "buyer"] as const) {
+      const previous = state;
+      state = reduce(state, { type: "change-role", role });
+      expect(state).toEqual({ ...previous, role });
+    }
+    state = reduce(state, { type: "contribute" });
+    expect(reduce(state, { type: "change-role", role: "admin" })).toEqual({ ...state, role: "admin" });
+  });
+  it("enforces role boundaries even for out-of-view dispatched actions", () => {
+    for (const role of ["buyer", "importer", "admin"] as const) {
+      const funded = { ...createQuickDemo("rejection"), role };
+      for (const type of ["ratify", "reject"] as const) {
+        expect(reduce(funded, { type }).stage).toBe(role === "importer" ? type === "ratify" ? "ratified" : "rejected" : "funded");
+      }
+      for (const [stage, type] of [["ratified", "authorize"], ["authorized", "release"], ["rejected", "enable-refund"], ["refund-available", "refund"]] as const) {
+        const state = { ...funded, stage };
+        expect(reduce(state, { type }) === state).toBe(role !== (type === "refund" ? "buyer" : "admin"));
+      }
+      const collecting = { ...createQuickDemo(), role, accepted: true };
+      expect(reduce(collecting, { type: "contribute" }) === collecting).toBe(role !== "buyer");
+    }
+  });
+  it("allows importer rejection after a buyer contribution and refunds the actual amount", () => {
+    let state = reduce(createQuickDemo(), { type: "select", blocks: 3 });
+    state = reduce(state, { type: "accept", accepted: true });
+    state = reduce(state, { type: "contribute" });
+    state = reduce(state, { type: "change-role", role: "importer" });
+    state = reduce(state, { type: "reject" });
+    state = reduce(state, { type: "change-role", role: "admin" });
+    state = reduce(state, { type: "enable-refund" });
+    state = reduce(state, { type: "change-role", role: "buyer" });
+    state = reduce(state, { type: "refund" });
+    expect(state.stage).toBe("refunded");
+    expect(state.events.at(-1)).toContain("15.000");
   });
 });

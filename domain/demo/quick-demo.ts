@@ -1,7 +1,9 @@
 export type Scenario = "success" | "rejection";
+export type DemoRole = "buyer" | "importer" | "admin";
 export type Stage = "collecting" | "funded" | "ratified" | "authorized" | "released" | "rejected" | "refund-available" | "refunded";
 export type QuickDemoState = {
   scenario: Scenario;
+  role: DemoRole;
   stage: Stage;
   blocks: number;
   accepted: boolean;
@@ -11,6 +13,7 @@ export type QuickDemoState = {
 };
 export type QuickDemoAction =
   | { type: "reset"; scenario: Scenario }
+  | { type: "change-role"; role: DemoRole }
   | { type: "select"; blocks: number }
   | { type: "accept"; accepted: boolean }
   | { type: "contribute" | "complete" | "ratify" | "authorize" | "release" | "reject" | "enable-refund" | "refund" };
@@ -23,6 +26,7 @@ export const TOTAL_BLOCKS = 10;
 export function createQuickDemo(scenario: Scenario = "success"): QuickDemoState {
   return {
     scenario,
+    role: "buyer",
     stage: scenario === "success" ? "collecting" : "funded",
     blocks: 1,
     accepted: false,
@@ -34,6 +38,12 @@ export function createQuickDemo(scenario: Scenario = "success"): QuickDemoState 
 
 export function quickDemoReducer(state: QuickDemoState, action: QuickDemoAction): QuickDemoState {
   if (action.type === "reset") return createQuickDemo(action.scenario);
+  if (action.type === "change-role") return { ...state, role: action.role };
+  const requiredRole: Record<Exclude<QuickDemoAction["type"], "reset" | "change-role">, DemoRole> = {
+    select: "buyer", accept: "buyer", contribute: "buyer", complete: "buyer", refund: "buyer",
+    ratify: "importer", reject: "importer", authorize: "admin", release: "admin", "enable-refund": "admin",
+  };
+  if (state.role !== requiredRole[action.type]) return state;
   if (action.type === "select") {
     if (state.stage !== "collecting" || state.ownBlocks > 0 || !Number.isInteger(action.blocks) || action.blocks < 1 || action.blocks > TOTAL_BLOCKS - state.fundedBlocks) return state;
     return { ...state, blocks: action.blocks };
@@ -58,7 +68,7 @@ export function quickDemoReducer(state: QuickDemoState, action: QuickDemoAction)
       message = "Otros compradores completaron la meta · 10 bloques financiados (simulado).";
       break;
     case "ratify":
-      if (stage !== "funded" || state.scenario !== "success") return state;
+      if (stage !== "funded") return state;
       stage = "ratified";
       message = "El importador ratificó precio, cantidad y condiciones (simulado).";
       break;
@@ -73,7 +83,7 @@ export function quickDemoReducer(state: QuickDemoState, action: QuickDemoAction)
       message = "Desembolso simulado completado · Bs 50.000 al importador ficticio.";
       break;
     case "reject":
-      if (stage !== "funded" || state.scenario !== "rejection") return state;
+      if (stage !== "funded") return state;
       stage = "rejected";
       message = "El importador rechazó la operación (simulado). No habrá compra ni desembolso.";
       break;
