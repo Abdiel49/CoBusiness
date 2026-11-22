@@ -3,6 +3,16 @@
 .demo-shell-brand { color: white; font-size: 1.3rem; font-weight: 700; text-decoration: none; }
 .demo-shell-brand span { color: #c8dcff; }
 .demo-shell-nav { display: flex; flex-wrap: wrap; gap: 1.5rem; padding: 1rem clamp(1rem, 4vw, 3rem); background: white; border-bottom: 1px solid #d9e0e8; }
+.demo-shell-nav { align-items: center; gap: .75rem; }
+.demo-shell-nav label { font-weight: 700; }
+.demo-shell-nav select { min-height: 44px; padding: .6rem 2.5rem .6rem .8rem; border: 1px solid #9ca9ba; border-radius: 8px; background: white; color: #09090c; font: inherit; }
+.demo-shell-header button { flex: none; border: 1px solid white; border-radius: 8px; padding: .65rem .85rem; background: transparent; color: white; font: inherit; font-weight: 700; cursor: pointer; white-space: nowrap; }
+.demo-shell-header button:hover { background: #0848bf; }
+.demo-session-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.demo-session-actions button { min-height: 44px; border: 1px solid #0c57de; border-radius: 8px; padding: .65rem 1rem; background: white; color: #0848bf; font: inherit; font-weight: 700; cursor: pointer; }
+.demo-session-actions button:hover { background: #edf4ff; }
+.demo-session-error :focus-visible { outline: 3px solid #0c57de; outline-offset: 3px; }
+@media (max-width: 480px) { .demo-shell-header { flex-wrap: wrap; }.demo-shell-header span:not(.demo-shell-brand span) { flex-basis: 100%; order: 3; } }
 .demo-shell-nav a { color: #0848bf; font-weight: 700; }
 .demo-shell-nav a[aria-current="page"] { color: #09090c; text-decoration: none; border-bottom: 3px solid #0c57de; }
 .demo-shell-content { max-width: 1320px; margin: auto; padding: 2rem clamp(1rem, 4vw, 3rem); }
