@@ -284,6 +284,7 @@ export default function Home() {
             <a href="#how-it-works">Cómo funciona</a>
             <a href="#mvp">MVP</a>
             <a href="#roadmap">Roadmap</a>
+            <a href="/login">Acceder</a>
           </nav>
           <a className="header-action" href="/identidad">
             Explorar la demo <Icon name="arrow" />
