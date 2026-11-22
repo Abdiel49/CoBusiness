@@ -1,8 +1,8 @@
 "use client";
 
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
-import { createLocalDemoRepository } from "./local-repository";
-import { createDemoServices, type DemoOfferService, type DemoOrderService } from "./services";
+import { DEMO_STORAGE_KEY, createLocalDemoRepository } from "./local-repository";
+import { createDemoServices, type DemoServices } from "./services";
 import type { DemoState } from "./types";
 
 type DemoContextValue = {
@@ -12,7 +12,7 @@ type DemoContextValue = {
   save: (state: DemoState) => void;
   reset: () => boolean;
   reload: () => void;
-  services: { offers: DemoOfferService; orders: DemoOrderService } | null;
+  services: DemoServices | null;
 };
 
 const DemoContext = createContext<DemoContextValue | null>(null);
@@ -37,7 +37,7 @@ export function DemoProvider({ children }: { children: React.ReactNode }) {
     let active = true;
     queueMicrotask(() => { if (active) reload(); });
     const sync = (event: StorageEvent) => {
-      if (event.key === "cobusiness.demo.v1" || event.key === null) reload();
+      if (event.key === DEMO_STORAGE_KEY || event.key === null) reload();
     };
     window.addEventListener("storage", sync);
     return () => { active = false; window.removeEventListener("storage", sync); };
