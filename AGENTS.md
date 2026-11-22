@@ -5,6 +5,24 @@
 - Read `PRODUCT.md` before making product or user-flow decisions. Treat its roadmap and target capabilities as planned scope, not proof that a feature is implemented.
 - Report any requirement you cannot complete. Include the failed requirement, the exact error or blocker, the affected work, and a practical suggestion or the missing prerequisite. Do not imply that a failed command or incomplete step succeeded.
 
+### Task delegation and completion reports
+
+- Delegate every task to a subagent unless the user explicitly asks not to delegate.
+- Give each subagent a complete task brief with the title, goal and description, required functionality, acceptance criteria, relevant constraints and files, and known dependencies.
+- Require the subagent to report each required functionality as completed or not completed, with evidence. For incomplete work, identify whether the cause was a blocker, missing information, or an error, and suggest a practical next step.
+- The primary agent remains responsible for reviewing delegated work, verifying the result, and reporting overall task status.
+- If a subagent tool is unavailable, report that delegation could not be completed; never claim that the task was delegated.
+
+### API documentation
+
+- Before answering questions about or implementing against this project's API, inspect the local OpenAPI JSON at `http://localhost:3001/api/docsjson`. Use it as the source of truth for routes, methods, request and response schemas, authorization, and documented errors.
+- If the endpoint is unavailable, report the exact error and affected work. Do not invent API behavior. Request that the API be started or a supplied, versioned specification be provided; continue only work that does not depend on the missing API details.
+
+### Feature documentation
+
+- Document every implemented feature in `docs/features/<feature-slug>.md`, in English. Include user-visible behavior, key flows and states, relevant API and data contracts, configuration, verification performed, and known limitations or pending integrations.
+- Keep feature documentation current when the implementation or its integration status changes. Continue updating `docs/component-inventory.md` when reusable UI components change.
+
 ### Language and comments
 
 - Write source code, identifiers, and technical documentation in English.
