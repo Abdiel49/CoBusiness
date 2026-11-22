@@ -286,8 +286,8 @@ export default function Home() {
             <a href="#roadmap">Roadmap</a>
             <a href="/login">Acceder</a>
           </nav>
-          <a className="header-action" href="/identidad">
-            Explorar la demo <Icon name="arrow" />
+          <a className="header-action" href="/demo">
+            Probar demo <Icon name="arrow" />
           </a>
         </header>
 
