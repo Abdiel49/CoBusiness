@@ -1,0 +1,27 @@
+.identity-page { min-height: 100vh; background: var(--page); }
+.identity-header { max-width: 1320px; margin: auto; padding: 26px 32px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.identity-header a { color: var(--ink); font-weight: 700; text-decoration: none; }
+.identity-header a:hover { text-decoration: underline; }
+.identity-brand { font-size: 24px; letter-spacing: -.03em; }
+.identity-brand span { color: var(--blue); }
+.identity-layout { max-width: 1180px; margin: 48px auto; padding: 0 32px 64px; display: grid; grid-template-columns: .9fr 1.1fr; gap: 72px; align-items: start; }
+.identity-intro h1 { font-size: clamp(2.5rem, 4vw, 3.7rem); line-height: 1.04; letter-spacing: -.035em; margin: 0 0 20px; }
+.identity-intro > p { color: var(--body); font-size: 19px; max-width: 35ch; }
+.identity-notice { margin-top: 44px; padding: 20px; background: var(--blue-wash); border-radius: 12px; color: #18345f; }
+.identity-notice p, .identity-pending p { margin: 6px 0 0; }
+.identity-panel { background: white; border: 1px solid var(--line); border-radius: 16px; padding: 32px; }
+.identity-panel h2 { font-size: 25px; line-height: 1.2; margin: 0; }
+.identity-panel > p { color: var(--body); }
+.identity-roles { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0; }
+.identity-roles button { background: white; color: var(--body); border: 1px solid #b9c4d1; border-radius: 9px; font: inherit; font-weight: 700; padding: 10px 14px; cursor: pointer; }
+.identity-roles button[aria-pressed="true"] { background: var(--blue); color: white; border-color: var(--blue); }
+.identity-roles button:hover { border-color: var(--blue); background: var(--blue-wash); color: var(--blue-dark); }
+.identity-roles button[aria-pressed="true"]:hover { background: var(--blue-dark); color: white; }
+.identity-roles button:focus-visible, .identity-header a:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.identity-preview { border-top: 1px solid var(--line); padding-top: 24px; }
+.identity-preview > span { color: var(--muted); font-weight: 700; font-size: 14px; }
+.identity-preview h3 { font-size: 24px; margin: 9px 0; }
+.identity-preview > p { color: var(--body); }
+.identity-pending { margin-top: 24px; background: #f4f6f8; padding: 16px; border-radius: 10px; color: var(--body); }
+.identity-footnote { font-size: 14px; margin: 25px 0 0; }
+@media (max-width: 760px) { .identity-header { padding: 20px; } .identity-layout { grid-template-columns: 1fr; gap: 28px; margin: 26px auto; padding: 0 20px 48px; } .identity-notice { margin-top: 24px; } .identity-panel { padding: 22px; } }
